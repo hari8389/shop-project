@@ -31,8 +31,21 @@ Route::get('customer-login', [AuthController::class, 'index'])->name('customer-l
 Route::post('post-login', [AuthController::class, 'postLogin'])->name('login.post'); 
 Route::get('customer-registration', [AuthController::class, 'registration'])->name('customer-registration');
 Route::post('customer-post', [AuthController::class, 'postCustomerRegistration'])->name('customer-post'); 
+
+// Route::post('customers',[CustomerController::class,'store']);
+// Route::get('customers',[CustomerController::class,'index']);
+// Route::get('customers/create',[CustomerController::class,'create']);
+// Route::get('customers/{id}/edit',[CustomerController::class,'edit']);
+// Route::put('customers/{id}',[CustomerController::class,'update']);
+// Route::delete('customers/{id}',[CustomerController::class,'destroy']);
+
+
+
 // Route::get('dashboard', [AuthController::class, 'dashboard']); 
 Route::get('logout', [AuthController::class, 'logout'])->name('logout');
+
+
+
 
 //vendor 
 Route::get('vendor-list', [AuthController::class, 'vendor_list']);
